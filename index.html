@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlappyBird</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        canvas{
+            background-color: #eee;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<audio id="die" src="music/sfx_die.ogg"></audio>
+<audio id="hit" src="music/sfx_hit.ogg"></audio>
+<audio id="point" src="music/sfx_point.ogg"></audio>
+<audio id="swo" src="music/sfx_swooshing.ogg"></audio>
+<audio id="wing" src="music/sfx_wing.ogg"></audio>
+<canvas id="canvas"></canvas>
+
+<script type="text/javascript" src="js/Background.js"></script>
+<script type="text/javascript" src="js/Land.js"></script>
+<script type="text/javascript" src="js/Pipe.js"></script>
+<script type="text/javascript" src="js/Bird.js"></script>
+<script type="text/javascript" src="js/SceneManage.js"></script>
+<script type="text/javascript" src="js/Game.js"></script>
+
+<script type="text/javascript">
+    var game = new Game();
+    // let a=JSON.parse(localStorage.getItem("FB"));
+    // a.push("哈哈");
+    // localStorage.setItem("FB",JSON.stringify(a));
+
+</script>
+</body>
+</html>
